@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Preços de Elo</title>
+    <link rel="stylesheet" type="text/css" href="elojob.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./img/akiralogo.png" width="125px" height="125px"></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./coach.html">Coach</a></li>
+                <li><a href="./elojob.html">Elo Job</a></li>
+                <li><a href="./planos.html">Planos</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <div class="container">
+        <h1>Elo Job</h1>
+        <div>
+            <img src="" alt="Elo Image" id="elo-image" width="200px" padding-rigth="85px">
+            <img src="" alt="Elo Desejado" id="elo-desejado-image" width="200px">
+        </div>
+        <div class="elos">
+            <div class="startelo">
+                <div>
+                    <label  for="start-elo">Elo de partida:</label>
+                    <select class="custom-select" id="start-elo" onchange="updateImage('start'); calculatePrice()">
+                        <option value="Ferro">Ferro</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Prata">Prata</option>
+                        <option value="Ouro">Ouro</option>
+                        <option value="Platina">Platina</option>
+                        <option value="Esmeralda">Esmeralda</option>
+                        <option value="Diamante">Diamante</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="start-subdivision">Subdivisão:</label>
+                    <select class="custom-select" id="start-subdivision" onchange="calculatePrice()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="endelo">
+                <div>
+                    <label  for="end-elo">Elo de destino:</label>
+                    <select class="custom-select" id="end-elo" onchange="updateImage('end'); updateDestinationImage(); calculatePrice()">
+                        <option value="Ferro">Ferro</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Prata">Prata</option>
+                        <option value="Ouro">Ouro</option>
+                        <option value="Platina">Platina</option>
+                        <option value="Esmeralda">Esmeralda</option>
+                        <option value="Diamante">Diamante</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="end-subdivision">Subdivisão:</label>
+                    <select class="custom-select" id="end-subdivision" onchange="calculatePrice()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+        </div>    
+        <div id="price-result"></div>
+        <button id="buy-button" onclick="buyEloJob()">Comprar</button>
+    </div>
+
+    <script src="elojob.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coach.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./img/akiralogo.png" width="125px" height="125px"></div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./coach.html">Coach</a></li>
+                <li><a href="./elojob.html">Elo Job</a></li>
+                <li><a href="./planos.html">Planos</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <div class="container">
+        <div class="content">
+            <img src="https://www.legendsbr.com/wp-content/uploads/2014/10/victory.png" alt="">
+            <div class="startelo">
+                <div>
+                    <p>Elo Atual:</p>
+                    <select id="elo-select" class="custom-select">
+                        <option value="Ferro">Ferro</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Prata">Prata</option>
+                        <option value="Ouro">Ouro</option>
+                        <option value="Platina">Platina</option>
+                        <option value="Esmeralda">Esmeralda</option>
+                        <option value="Diamante">Diamante</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Quantidade de Aulas:</p>
+                    <select id="aulas-select" class="custom-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div id="price-result">
+                    <h3>45R$</h3>
+                </div>
+                <button id="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="coach.js"></script>
+</body>
+</html>
