@@ -24,6 +24,7 @@ body {
 h1 {
     color: #ffffff;
     text-align: center;
+    margin-bottom: 230px;
 }
 
 header {
@@ -86,7 +87,15 @@ label {
 }
 
 #elo-image{
-    padding-right: 95px;
+    top: 200px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+#elo-desejado-image{
+    top: 200px;
+    position: absolute;
+    margin-left: 5px;
 }
 
 .startelo{
@@ -172,4 +181,60 @@ button:hover {
     padding: 10px;
     margin-top: 20px;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    .elos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .startelo, .endelo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #elo-image, #elo-desejado-image {
+        display: block;
+        margin-bottom: 178px;
+        position: relative;
+        z-index: 1;
+        
+    }
+
+    .startelo, .endelo {
+        padding-right: 0;
+    }
+
+    .startelo{
+        margin-bottom: -128px;
+    }
+
+    .elos select {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .elos label {
+        margin-right: 0;
+    }
+
+    .elo-container {
+        position: relative;
+        z-index: 2;
+    }
+
+    #buy-button{
+        border-bottom: #0057b300;
+        padding-bottom: 20px;
+      }
+      
+
+    
+
 }

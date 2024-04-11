@@ -143,3 +143,10 @@ button:hover{
     -moz-appearance: none;
     appearance: none;
 }
+
+@media (max-width: 700px) {
+    /* Estilos que serão aplicados quando a largura da tela for menor ou igual a 700px */
+    nav ul li {
+        margin-top: 10px;
+    }
+}

@@ -18,12 +18,9 @@
     </header>
     <div class="container">
         <h1>Elo Job</h1>
-        <div>
-            <img src="" alt="Elo Image" id="elo-image" width="200px" padding-rigth="85px">
-            <img src="" alt="Elo Desejado" id="elo-desejado-image" width="200px">
-        </div>
         <div class="elos">
-            <div class="startelo">
+            <div class="startelo elo-container">
+                <img src="" alt="Elo Image" id="elo-image" width="200px" padding-rigth="85px">
                 <div>
                     <label  for="start-elo">Elo de partida:</label>
                     <select class="custom-select" id="start-elo" onchange="updateImage('start'); calculatePrice()">
@@ -37,6 +34,7 @@
                     </select>
                 </div>
                 <div>
+                    
                     <label for="start-subdivision">Subdivisão:</label>
                     <select class="custom-select" id="start-subdivision" onchange="calculatePrice()">
                         <option value="1">1</option>
@@ -46,8 +44,10 @@
                     </select>
                 </div>
             </div>
-            <div class="endelo">
+            <div class="endelo elo-container">
+                <img src="" alt="Elo Desejado" id="elo-desejado-image" width="200px">
                 <div>
+                    
                     <label  for="end-elo">Elo de destino:</label>
                     <select class="custom-select" id="end-elo" onchange="updateImage('end'); updateDestinationImage(); calculatePrice()">
                         <option value="Ferro">Ferro</option>
@@ -73,7 +73,11 @@
         <div id="price-result"></div>
         <button id="buy-button" onclick="buyEloJob()">Comprar</button>
     </div>
-
+    <footer>
+        <div>
+            
+        </div>
+    </footer>
     <script src="elojob.js"></script>
 </body>
 </html>

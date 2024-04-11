@@ -49,6 +49,8 @@ nav ul li a {
     
 }
 
+
+
 .background {
     position: relative;
     width: 100%;
@@ -143,4 +145,16 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+
+@media (max-width: 700px) {
+    /* Estilos que serão aplicados quando a largura da tela for menor ou igual a 700px */
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    .initi h1 {
+        line-height: 86px;
+    }
 }
